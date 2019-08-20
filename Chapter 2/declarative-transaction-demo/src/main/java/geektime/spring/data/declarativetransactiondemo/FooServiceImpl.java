@@ -25,6 +25,8 @@ public class FooServiceImpl implements FooService {
 
     @Override
     public void invokeInsertThenRollback() throws RollbackException {
+        // 调用了带事物的方法insertThenRollback，但是该方法没有带事物，因此对于该放来来说，
+        // @Transactional(rollbackFor = RollbackException.class)事物不生效
         insertThenRollback();
     }
 }
