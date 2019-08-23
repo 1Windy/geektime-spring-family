@@ -14,6 +14,10 @@ import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * @MappedSuperclass  标明该类是一个父类（多个entity的父类）
+ */
+
 @MappedSuperclass
 @Data
 @NoArgsConstructor

@@ -12,6 +12,10 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.io.Serializable;
 
+/**
+ * @ToString(callSuper = true)  设置callSuper = true, 可以调用到父类定义的一些属性
+ */
+
 @Entity
 @Table(name = "T_COFFEE")
 @Builder
